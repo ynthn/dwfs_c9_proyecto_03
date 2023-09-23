@@ -23,7 +23,8 @@ La aplicación consiste en seleccionar año y mes y poder graficar los valores d
 * -Chart.js (Librería para graficar)
 * -NODE.JS (Entorno controlado por eventos diseñado para crear aplicaciones escalables)
 * -NPM (gestor de paquetes de NODE.JS, entorno de ejecución de JavaScript)
-* -API DOLAR cmfchile-> https://api.cmfchile.cl/index.html
+* -API DOLAR cmfchile-> https://api.cmfchile.cl/index.html (con API KEY)
+* -DEPLOY en NETLIFY
 
 ## 3. Prototipo
 ![Prototipo](/img/prototipo.jpg)
@@ -34,4 +35,5 @@ La aplicación consiste en seleccionar año y mes y poder graficar los valores d
 * Graficar: Se uso la librería Chart.js para desplegar gráficos
 * Consumo de datos: Se utilizo la función fetch de JavaScript para poder consumir la API
 * Modularización: Se utilizo emc6 para independizar las partes de la aplicación WEB (Código JavaScript)
-* async-await: Se utilizo para recibir la promesa de la función fetch y así el usuario final pueda leer de mejor forma los datos.
+* async-await: Se utilizo para recibir la promesa de la función fetch y así el usuario final pueda leer de mejor forma los datos. Se uso el try/catch para validar el consumo de la API
+* se uso un archivo .js con funciones para dar formatos a fechas y numeros requeridos
