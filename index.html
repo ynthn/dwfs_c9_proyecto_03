@@ -13,7 +13,9 @@
 
 <body>
 
-
+    <div id="loading">
+        <span class="loader"></span>
+    </div>
 
 
     <header>
@@ -61,10 +63,10 @@
                     <div class="col-md-12">
                         <hr>
                     </div>
-                    <div class="col-md-4">
-                        <div>
+                    <div class="col-md-3">
+                        <div class="mt-3">
                             <label>Seleccionar Año</label>
-                            <select class="form-control">
+                            <select id="year" class="form-control">
                                 <option value="">---</option>
                                 <option value="2023">2023</option>
                                 <option value="2022">2022</option>
@@ -72,20 +74,33 @@
                                 <option value="2020">2020</option>
                             </select>
                         </div>
-                        <div>
+                        <div class="mt-3">
                             <label>Seleccionar Mes</label>
-                            <select class="form-control">
+                            <select id="month" class="form-control">
                                 <option value="">---</option>
-                                <option value="2023">2023</option>
-                                <option value="2022">2022</option>
-                                <option value="2021">2021</option>
-                                <option value="2020">2020</option>
+                                <option value="01">ENERO</option>
+                                <option value="02">FEBRERO</option>
+                                <option value="03">MARZO</option>
+                                <option value="04">ABRIL</option>
+                                <option value="05">MAYO</option>
+                                <option value="06">JUNIO</option>
+                                <option value="07">JULIO</option>
+                                <option value="08">AGOSTO</option>
+                                <option value="09">SEPTIEMBRE</option>
+                                <option value="10">OCTUBRE</option>
+                                <option value="11">NOVIEMBRE</option>
+                                <option value="12">DICIEMBRE</option>
                             </select>
                         </div>
-                        <div>
-                           <button class="btn btn-primary">GENERAR</button>
+                        <div class="mt-3">
+                            <button id="btn-make" class="btn btn-primary">GENERAR</button>
                         </div>
                     </div>
+
+                    <div class="col-md-9">
+                        <div style="width: 100%;"><canvas id="graph"></canvas></div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -111,7 +126,30 @@
 
 
 
+
+
+
+    <!--MODAL MESSAGE-->
+    <div class="modal" tabindex="-1" id="modal-message">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Aviso</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="message"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
     <!--JAVASCRIPT-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./js/bootstrap.js"></script>
     <script src="./app.js" type="module"></script>
 </body>
