@@ -10,7 +10,7 @@
 Se desarrollo una aplicación que consume una API y realiza las siguiente funcionalidades:
 * -Consumir API
 * -Mostrar gráfico con datos obtenidos
-* -Link: 
+* -Link: https://kaleidoscopic-basbousa-8480ea.netlify.app/
 
 La aplicación consiste en seleccionar año y mes y poder graficar los valores del dólar a pesos chilenos
 
