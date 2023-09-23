@@ -12,6 +12,8 @@ Se desarrollo una aplicación que consume una API y realiza las siguiente funcio
 * -Mostrar gráfico con datos obtenidos
 * -Link: 
 
+La aplicación consiste en seleccionar año y mes y poder graficar los valores del dólar a pesos chilenos
+
 ## 2. Tecnologías utilizadas
 * -HTML 5
 * -CSS
@@ -21,6 +23,7 @@ Se desarrollo una aplicación que consume una API y realiza las siguiente funcio
 * -Chart.js (Librería para graficar)
 * -NODE.JS (Entorno controlado por eventos diseñado para crear aplicaciones escalables)
 * -NPM (gestor de paquetes de NODE.JS, entorno de ejecución de JavaScript)
+* -API DOLAR cmfchile-> https://api.cmfchile.cl/index.html
 
 ## 3. Prototipo
 ![Prototipo](/img/prototipo.jpg)
@@ -28,3 +31,7 @@ Se desarrollo una aplicación que consume una API y realiza las siguiente funcio
 ## 4. Descripción del proyecto
 * Header: se utilizó navbar de Bootstrap.
 * Prototipo: Desarrollado en Photoshop.
+* Graficar: Se uso la librería Chart.js para desplegar gráficos
+* Consumo de datos: Se utilizo la función fetch de JavaScript para poder consumir la API
+* Modularización: Se utilizo emc6 para independizar las partes de la aplicación WEB (Código JavaScript)
+* async-await: Se utilizo para recibir la promesa de la función fetch y así el usuario final pueda leer de mejor forma los datos.
